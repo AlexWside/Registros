@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.body{
+    background: #000;
+    height: 50em;  
+    
+}
+
+#form-user{
+margin-top: 8em;
+
+}
+
+
+
+.img-thumbnail{
+    position: relative;
+}
+#cancelar-novo-registro{
+    text-decoration: none;
+    color: #fff;
+}
+/*/--------------------------------------------------------------------/*/
+.resultado_da_busca{
+    margin-top: 4em;
+    margin-left: 0.5em;
+}
+#cancelar-busca{
+color: #fff;
+text-decoration: none;
+}
+.conteiner_botton_busca{
+    float: right;
+    margin:1.5%;
+}
+/*----------------------------------------------------------*/
+.campo_busca_data{
+float: right;
+margin-top: 2em;
+padding: 1.5%;
+}
+
+#titulo_nav_bar{
+    margin-left: 1em;
+    
+}
+
+
+ .dt-cri{
+    float: right;
+    color: #686868;
+    margin-right: 5em;
+}
+
+.centralizador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
