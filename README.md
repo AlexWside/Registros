@@ -10,4 +10,41 @@
 .</br>
 .</br>
 -Banco MYSQL</br>
--Script: (...)
+-Script: 
+
+-- Banco de dados: `registros`
+--
+-- CREATE DATABASE `registros`
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `registro`
+--
+
+CREATE TABLE `registro` (
+  `id` int(11) NOT NULL,
+  `titulo` varchar(220) NOT NULL,
+  `descricao` text NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime DEFAULT NULL,
+  `usuario` int(11) NOT NULL,
+  `status` int(11) DEFAULT NULL,
+  `nm_usuario` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(200) NOT NULL,
+  `sobrenome` varchar(200) DEFAULT NULL,
+  `permissao` int(11) NOT NULL,
+  `login` varchar(200) NOT NULL,
+  `senha` varchar(300) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
