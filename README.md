@@ -34,7 +34,8 @@ CREATE TABLE `registro` (
 
 -- --------------------------------------------------------
 
---
+
+
 -- Estrutura da tabela `usuario`
 --
 
@@ -48,3 +49,13 @@ CREATE TABLE `usuario` (
   `created` datetime NOT NULL,
   `modified` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+-- --------------------------------------------------------
+-- ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`id`);
+-- --------------------------------------------------------  
+-- ALTER TABLE `usuario`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
+-- --------------------------------------------------------
+INSERT INTO `usuario` (`id`, `nome`, `sobrenome`, `permissao`, `login`, `senha`, `created`, `modified`) VALUES
+(1, 'adm01', 'adm01', 1, 'admin', '$2y$10$/k7GFZpvGTKCL/uncpzyAed776VfuNFMIAx7K4q8uKDXZ8SAkwT5C', '2021-04-17 00:30:50', NULL);
